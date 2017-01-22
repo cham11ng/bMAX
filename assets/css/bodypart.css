@@ -1,0 +1,240 @@
+label > input { /* HIDE RADIO */
+    visibility: hidden; /* Makes input not-clickable */
+    position: absolute;
+}
+label > input+div{ /* IMAGE STYLES */
+    cursor:pointer;
+}
+
+label > input:checked+div{ /* (RADIO CHECKED) IMAGE STYLES */
+    background-color: #fff;
+    border-color: #ccc;
+    opacity: .65;
+}
+
+label > input:checked+div:hover{ /* (RADIO CHECKED) IMAGE STYLES */
+    background-color: #fff;
+    border-color: #ccc;
+    opacity: .65;
+    cursor: default;
+}
+
+/**************/
+
+#male {
+    width: 232px;
+    height: 500px;
+    background: url('../images/body_parts/male/male.png') no-repeat;
+    float: right;
+}
+
+#female {
+    width: 232px;
+    height: 500px;
+    background: url('../images/body_parts/female/female.png') no-repeat;
+    float: right;
+}
+
+input[type=checkbox] {
+    display:none;
+}
+
+input[type=checkbox]+label {
+    display: block;
+    margin:0px;
+}
+/*-----------HEAD---------*/
+input[type=checkbox] + label#mhead
+{
+    background: url('../images/body_parts/male/head.png');
+    width: 232px;
+    height: 66px;
+}
+
+input[type=checkbox]:checked + label#mhead {
+    background: url('../images/body_parts/male/head-select.png');
+}
+/*-----------NECK---------*/
+input[type=checkbox] + label#mneck
+{
+    background: url('../images/body_parts/male/neck.png');
+    width: 232px;
+    height: 18px;
+}
+
+input[type=checkbox]:checked + label#mneck {
+    background: url('../images/body_parts/male/neck-select.png');
+}
+/*-----------CHEST---------*/
+input[type=checkbox] + label#mchest
+{
+    background: url('../images/body_parts/male/chest.png');
+    width: 232px;
+    height: 77px;
+}
+
+input[type=checkbox]:checked + label#mchest {
+    background: url('../images/body_parts/male/chest-select.png');
+}
+/*----------Abdomen----------*/
+input[type=checkbox] + label#mabdomen
+{
+    background: url('../images/body_parts/male/abdomen.png');
+    width: 232px;
+    height: 44px;
+}
+
+input[type=checkbox]:checked + label#mabdomen {
+    background: url('../images/body_parts/male/abdomen-select.png');
+}
+
+/*-----------Leg---------*/
+input[type=checkbox] + label#mleg
+{
+    background: url('../images/body_parts/male/leg.png');
+    width: 232px;
+    height: 295px;
+}
+
+input[type=checkbox]:checked + label#mleg {
+    background: url('../images/body_parts/male/leg-select.png');
+}
+
+/*-----------FEMALE---------*/
+/*-----------HEAD---------*/
+input[type=checkbox] + label#fhead
+{
+    background: url('../images/body_parts/female/head.png');
+    width: 232px;
+    height: 62px;
+}
+
+input[type=checkbox]:checked + label#fhead {
+    background: url('../images/body_parts/female/head-select.png');
+}
+/*-----------NECK---------*/
+input[type=checkbox] + label#fneck
+{
+    background: url('../images/body_parts/female/neck.png');
+    width: 232px;
+    height: 17px;
+}
+
+input[type=checkbox]:checked + label#fneck {
+    background: url('../images/body_parts/female/neck-select.png');
+}
+/*-----------CHEST---------*/
+input[type=checkbox] + label#fchest
+{
+    background: url('../images/body_parts/female/chest.png');
+    width: 232px;
+    height: 74px;
+}
+
+input[type=checkbox]:checked + label#fchest {
+    background: url('../images/body_parts/female/chest-select.png');
+}
+/*----------Abdomen----------*/
+input[type=checkbox] + label#fabdomen
+{
+    background: url('../images/body_parts/female/abdomen.png');
+    width: 232px;
+    height: 55px;
+}
+
+input[type=checkbox]:checked + label#fabdomen {
+    background: url('../images/body_parts/female/abdomen-select.png');
+}
+
+/*-----------Leg---------*/
+input[type=checkbox] + label#fleg
+{
+    background: url('../images/body_parts/female/leg.png');
+    width: 232px;
+    height: 291px;
+}
+
+input[type=checkbox]:checked + label#fleg {
+    background: url('../images/body_parts/female/leg-select.png');
+}
+
+
+main {
+    margin: 0 auto;
+    height: auto;
+    padding: 20px 0 10px;
+    width: 960px;
+}
+
+main .blog {
+    padding: 0;
+}
+main .content {
+    margin: 0px auto;
+    padding: 0;
+    width: 605px;
+    height: auto;
+}
+
+main .sidebar {
+    border:#2f394e solid 5px;
+    background-color:white;
+    border-radius: 5px;
+    float: left;
+    margin-bottom: 10px;
+    padding: 8px;
+    width: 400px;
+}
+main .sidebar h3 {
+    color: #2f394e;
+    font-family: 'Comfortaa-Regular';
+    font-size: 20px;
+    font-weight: normal;
+    letter-spacing: 0.1em;
+    margin: 0;
+    padding: 25px 10px;
+    text-align: center;
+    text-transform: capitalize;
+}
+main .sidebar ul {
+    margin: 0;
+    text-align: center;
+    padding: 0 20px 50px;
+}
+main .sidebar ul li {
+    list-style: none;
+    margin: 0;
+    padding: 0px;
+}
+main .sidebar ul li span {
+    color: #2f394e;
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 0.01em;
+    line-height: 24px;
+    margin: 0;
+    padding: 0;
+}
+main .sidebar ul li span a {
+    color: #2f394e;
+    text-decoration: none;
+}
+main .sidebar ul li span a:hover {
+    color: #4c8f97;
+}
+main .sidebar ul li p {
+    color: #000;
+    font-size: 13px;
+    line-height: 24px;
+    margin: 0;
+    padding: 0;
+    text-align: justify;
+}
+main .sidebar ul li p a {
+    color: #000;
+    text-decoration: none;
+}
+main .sidebar ul li p a:hover {
+    color: #4c8f97;
+}
